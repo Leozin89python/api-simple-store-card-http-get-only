@@ -28,13 +28,13 @@ public class CardController {
 			List<Card> card = service.getData();
 			return ResponseEntity.ok().body(card);
 		}
-		
+		//corrigir
 		@PostMapping(value="/insert")
 		public ResponseEntity<List<Card>> insert(@RequestBody List<Card> obj){
 			List<Card> card = service.insert(obj);
 			return ResponseEntity.ok().body(card);
 		}
-		
+		//corrigir
 		@DeleteMapping(value="/delete/{id}")
 		public void delete(@RequestParam Long id) {
 			service.delete(id);

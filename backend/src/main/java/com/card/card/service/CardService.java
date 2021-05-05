@@ -22,13 +22,13 @@ public class CardService {
 		List<Card> card = repository.findAll();
 		return card;
 	}
-	
+	//corrigir
 	@Transactional
 	public List<Card> insert(List<Card> obj) {
 		List<Card> card = repository.saveAll(obj);
 		return card;
 	}
-	
+	//corrigir
 	@Transactional
 	public void delete(@RequestParam Long id) {
 		repository.deleteById(id);
